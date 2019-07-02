@@ -51,3 +51,47 @@ class Elvis5{
 	}
 }
 
+//改进：
+class Elvis6{
+	private static Elvis6 instance = null;
+	private Elvis6(){}
+	public static Elvis6 getInstance(){
+		if(instance == null){
+			synchronized (Elvis6.class) {
+				if(instance == null)
+					instance = new Elvis6();
+			}
+		}
+		return instance;
+	}
+}
+
+//改进：
+class Elvis7{
+	private static volatile Elvis7 instance = null;
+	private Elvis7(){}
+	public static Elvis7 getInstance(){
+		if(instance == null){
+			synchronized (Elvis7.class) {
+				if(instance == null)
+					instance = new Elvis7();
+			}
+		}
+		return instance;
+	}
+}
+
+//改进：
+class Elvis8{
+	
+	private Elvis8(){}
+	private static class InstanceHolder{
+		public static Elvis8 instance = new Elvis8();
+	}
+	public static Elvis8 getInstance(){
+		return InstanceHolder.instance;
+	}
+}
+
+
+
