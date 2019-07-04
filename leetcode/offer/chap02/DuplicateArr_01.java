@@ -1,6 +1,6 @@
 package chap02;
 
-public class DuplicateArr {
+public class DuplicateArr_01 {
 	public static int duplicate(int[] A){
 		if(null == A || A.length <= 1)
 			return -1;

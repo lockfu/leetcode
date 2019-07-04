@@ -1,6 +1,10 @@
 package chap02;
 
-public class DuplicateArrNoModify {
+import java.util.concurrent.locks.ReentrantLock;
+
+import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
+
+public class DuplicateArrNoModify_02 {
 	public static int getDupllicate(int[] A){
 		if(null == A || A.length <= 1) return -1;
 		int st = 1;
