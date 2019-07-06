@@ -1,9 +1,13 @@
 package chap02;
 
-import java.util.concurrent.locks.ReentrantLock;
-
-import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
-
+/**
+ * 不修改找出重复的数字
+ * 长度为1+n的数组中的所有数组在1-n范围中。找到任意一个重复的数字
+ * 使用二分查找的方法，对1-n的数字进行划分，查看每半边中的数在整个数组中的数量，
+ * 如果大于的当前半边的值的话，那么这半边就有重复的数字。
+ * @author DELL
+ *
+ */
 public class DuplicateArrNoModify_02 {
 	public static int getDupllicate(int[] A){
 		if(null == A || A.length <= 1) return -1;

@@ -1,6 +1,18 @@
 package chap02;
 
+/**
+ * 二维数组中的查找
+ * 每一行和每一列递增 输入一个整数，求是否存在
+ * @author DELL
+ *
+ */
 public class FindMatrixTarget {
+	/**
+	 * 从右上顶点开始查找，如果当前值大于输入值，则当前值往下都大于，否则当前值往左都小于。
+	 * @param A
+	 * @param t
+	 * @return
+	 */
 	public static boolean find(int[][] A, int t){
 		if(null == A || A.length <= 0 || A[0].length <= 0) return false;
 		int row = A.length, col = A[0].length;

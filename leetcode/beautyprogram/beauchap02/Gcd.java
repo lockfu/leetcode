@@ -1,4 +1,4 @@
-package programart.chap02;
+package beauchap02;
 
 public class Gcd {
 	
@@ -6,7 +6,7 @@ public class Gcd {
 	public static int gcd_s1(int x, int y){
 		return y == 0 ? x : gcd_s1(y, x % y);
 	}
-	
+		
 	// f(x, y) = f(x - y, y)
 	public static int gcd_s2(int x, int y){
 		if(x < y)

@@ -4,6 +4,12 @@ import java.util.Stack;
 
 import domain.ListNode;
 
+/**
+ * 反转打印链表
+ * 栈  递归
+ * @author DELL
+ *
+ */
 public class PrintLinkReverse {
 	
 	public static void printReverse(ListNode head){
