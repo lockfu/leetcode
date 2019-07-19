@@ -2,7 +2,7 @@ package sort;
 
 import java.util.Arrays;
 
-public class InsertSort {
+public class _003_InsertSort {
 	// 插入排序
 	// 外圈： 遍历每一个元素（从第二个元素开始）
 	// 内圈： 遍历排序的元素，从尾部开始，然后选择合适位置插入
@@ -28,6 +28,7 @@ public class InsertSort {
 			A[j+1] = key;
 		}
 	}
+	
 	
 	public static void main(String[] args) {
 		int[] A = {5,2,4,6,1,3};

@@ -2,7 +2,7 @@ package sort;
 
 import java.util.Arrays;
 
-public class MergeSort {
+public class _005_MergeSort {
 
 	
 	/**

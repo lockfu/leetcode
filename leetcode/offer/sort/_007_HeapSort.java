@@ -1,6 +1,6 @@
 package sort;
 
-public class HeapSort {
+public class _007_HeapSort {
 	
 	/**
 	 * ∂—≈≈–Ú   O(nlogn) ≤ªŒ»∂®
