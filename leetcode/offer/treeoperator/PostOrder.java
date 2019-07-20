@@ -19,10 +19,10 @@ public class PostOrder {
 		while(!st.isEmpty()){
 			TreeNodeOff node = st.peek();
 			if(node.left == null && node.right == null)
-				System.out.print(st.poll().val + " ");
+				System.out.print(st.poll().val + " ");   // poll the first head
 			else{
 				if(node.right != null){
-					st.push(node.right);
+					st.push(node.right);   // push the first head
 					node.right = null;
 				}
 				if(node.left != null){

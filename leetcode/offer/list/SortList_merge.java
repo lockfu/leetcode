@@ -81,4 +81,6 @@ public class SortList_merge {
 		   return res.next;
 	   }
 	   
+	   public static void main(String[] args) {
+	}
 }
