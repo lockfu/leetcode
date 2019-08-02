@@ -23,6 +23,7 @@ public class ReverseSentenceLeft {
 	
 	public static void main(String[] args) {
 		String str = "abcdefg";
+		
 		reverseSenLeft(str, 2);
 	}
 }

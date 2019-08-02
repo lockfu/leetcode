@@ -18,6 +18,5 @@ public class FirstNotRepeatingChar {
 	public static void main(String[] args) {
 		String str = "abaccdeffbnde";
 		char c = firstNotReChar(str);
-		System.out.println(c);
 	}
 }

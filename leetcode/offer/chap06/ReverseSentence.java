@@ -1,5 +1,7 @@
 package chap06;
 
+import java.util.Arrays;
+
 public class ReverseSentence {
 	public static void reverseSentence(String str){
 		if(null == str || str.length() <= 0) return;
@@ -22,6 +24,8 @@ public class ReverseSentence {
 	
 	public static void main(String[] args) {
 		String str = "I am a student.";
-		reverseSentence(str);
+		String s = " ";
+		System.out.println(s.length());
+//		reverseSentence(str);
 	}
 }

@@ -1,5 +1,8 @@
 package chap05;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MoreThanHalfNum {
 	public static int moreHalfNum(int[] A){
 		if(null == A || A.length <= 1) return -1;
@@ -57,6 +60,7 @@ public class MoreThanHalfNum {
 	
 	public static void main(String[] args) {
 		int[] A = {2,3,4,2,5,3,3,4,3,3,3};
+		new ArrayList<>(Arrays.asList(A));
 		int res = morehalf(A);
 		System.out.println(res);
 	}

@@ -15,6 +15,13 @@ public class Pow {
 		return (n%2 == 0) ? myPow(x*x, n/2) : x*myPow(x*x, n/2);
 	}
 	
+	public double Power(double base, int exponent) {
+        if(exponent == 0) return 1.0;
+        if(exponent == -1) return 1/base;
+        if(exponent == 1) return base;
+        double half = Power(base, exponent/2);
+        return half * half * Power(base, exponent % 2);
+    }
 	
 	public double myPow1(double x, int n) {
         return pow(x,(long)n);

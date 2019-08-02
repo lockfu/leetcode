@@ -1,6 +1,7 @@
 package sort;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class _003_InsertSort {
 	// ≤Â»Î≈≈–Ú

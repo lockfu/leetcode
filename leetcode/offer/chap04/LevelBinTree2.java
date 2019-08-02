@@ -46,5 +46,6 @@ public class LevelBinTree2 {
 		
 		printTree(root);
 		
+		
 	}
 }

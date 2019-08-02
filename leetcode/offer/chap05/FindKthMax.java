@@ -52,7 +52,7 @@ public class FindKthMax {
 			siftdown(res,i);
 		}
 		for(int i = k; i<A.length; i++){
-			if(A[i] > res[0]){
+			if(A[i] < res[0]){
 				res[0] = A[i];
 				siftdown(res, 0);
 			}
@@ -60,7 +60,7 @@ public class FindKthMax {
 		return res;
 	}
 	
-	public static void siftdown(int[] A, int i){
+	public static void siftup(int[] A, int i){
 		int t = i, flag = 0;
 		while(2 * i < A.length && flag == 0){
 			if(A[i] > A[2 * i])
@@ -78,13 +78,31 @@ public class FindKthMax {
 		}
 	}
 	
+	public static void siftdown(int[] A, int i){
+		int t = i, flag = 0;
+		while(2 * i < A.length && flag == 0){
+			if(A[i] < A[2 * i])
+				t = 2 * i;
+			if(2 * i + 1 < A.length)
+				if(A[t] < A[2 * i + 1])
+					t = 2 * i + 1;
+			if(t != i){
+				int temp = A[t];
+				A[t] = A[i];
+				A[i] = temp;
+				i = t;
+			}else
+				flag = 1;
+		}
+	}
+	
 	public static void main(String[] args) {
 		int[] A = {4,5,1,6,2,7,3,8,9,10,12,13};
 //		findKthMax_Par(A, 4);
 		int[] res = findKthMax_heap(A, 4);
 		System.out.println(Arrays.toString(res));
 		
-		System.out.println(SubClass.val);
+//		System.out.println(SubClass.val);
 	}
 }
 

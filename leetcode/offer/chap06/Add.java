@@ -9,7 +9,7 @@ public class Add {
 			a = sum;
 			b = carry;
 		}
-		return sum;
+		return a;
 	}
 	
 	public static void main(String[] args) {

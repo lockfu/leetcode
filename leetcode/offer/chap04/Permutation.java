@@ -12,6 +12,7 @@ public class Permutation {
 			System.out.println(Arrays.toString(cs));
 		}else{
 			for(int i = begin; i<cs.length; i++){
+				if(i > begin && cs[i] == cs[i-1]) continue;
 				char temp = cs[i];
 				cs[i] = cs[begin];
 				cs[begin] = temp;

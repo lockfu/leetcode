@@ -1,6 +1,9 @@
 package chap04;
 
+import java.util.ArrayList;
 import java.util.Stack;
+
+import domain.TreeNode;
 import domain.TreeNodeOff;
 
 public class LevelBinTree3Z {

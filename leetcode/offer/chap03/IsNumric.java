@@ -12,6 +12,7 @@ public class IsNumric {
 			str = scanUnsignInteger(str);
 		}
 		if(str.isEmpty()) return true;
+		if(str.length()==1) return false;
 		if(str.charAt(0) == 'e' || str.charAt(0) == 'E'){
 			str = str.substring(1);
 			str = scanInteger(str);
@@ -32,7 +33,7 @@ public class IsNumric {
 	}
 	
 	public static void main(String[] args) {
-		String str = "-3423E123";
+		String str = "12e";
 		boolean res = isNum(str);
 		System.out.println(res);
 	}

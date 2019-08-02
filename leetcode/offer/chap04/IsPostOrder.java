@@ -1,5 +1,7 @@
 package chap04;
 
+import java.util.ArrayList;
+
 public class IsPostOrder {
 	public static boolean isPostOrder(int[] A){
 		if(null == A || A.length <= 0) return false;
@@ -36,5 +38,6 @@ public class IsPostOrder {
 		int[] A = {7,4,6,5};
 		boolean res = isPostOrder(A);
 		System.out.println(res);
+		ArrayList<Integer> list = new ArrayList<>();
 	}
 }
